@@ -78,6 +78,7 @@ footer {
   background-size: cover;
   width: 155px;
   height: 155px;
+  cursor: pointer;
 }
 .hakaton_top_right {
   right: 20px;

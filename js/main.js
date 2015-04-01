@@ -6,6 +6,7 @@ $(document).ready(function(){
 			var
 				button = $('body .hakaton'),
 				popup = $('body .hackathonplug-modal__overlay');
+				close = $('body .hackathonplug-modal__close');
 
 			return {
 				init: function(obj){
@@ -19,7 +20,7 @@ $(document).ready(function(){
 					    _this.showPopup();
 					});
 
-					popup.on('click', function(){
+					close.on('click', function(){
 						_this.hidePopup();
 					});
 				},
@@ -59,8 +60,7 @@ $(document).ready(function(){
 
 
 		hackogin.init({
-			position: 'top-left'
+			position: 'bottom-right'
 		});
-
 
 }); // - > ready_end;
