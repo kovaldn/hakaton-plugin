@@ -80,7 +80,7 @@ footer {
 {
 	position: fixed;
 	display: block;
-	background: url('/img/blamba.png') 0 0 no-repeat;
+	background: url('/img/hakaton.png') 0 0 no-repeat;
 	background-size: cover;
 	width: 155px;
 	height: 155px;
@@ -115,95 +115,117 @@ footer {
 	left: 0;
 	right: 0;
 	text-align: center;
-	font-size: 18px;
+	font-size: 30px;
 	line-height: 20px;
 	font-weight: bold;
-}
-
-.hackathonplug {
-
+    color: #000;
 }
 
 .hackathonplug-modal__overlay {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,.7);
-	text-align: center;
-	display: none;
-	
-	&:after {
-		display: inline-block;
-		height: 100%;
-		width: 0;
-		vertical-align: middle;
-		content: '';
-	}
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    text-align: center;
 
-	&.visible {
-		display: block;
-	}
+    &:after {
+        display: inline-block;
+        height: 100%;
+        width: 0;
+        vertical-align: middle;
+        content: '';
+    }
+
+    &.visible {
+        display: inline-block;
+    }
 }
 
 .hackathonplug-modal {
-	font-family: 'PT Serif';
-	display: inline-block;
-	position: relative;
-	max-width: 50%;
-	padding: 20px;
-	border: 5px solid #fff;
-	border-radius: 15px;
-	box-shadow: inset 0 2px 2px 2px rgba(0,0,0,.4);
-	background: #fff;
-	vertical-align: middle;
+    font-family: 'PT Serif';
+    display: inline-block;
+    position: relative;
+    width: 1084px;
+    height: 792px;
+    padding: 20px;
+    margin-top: -60px;
+    background: url(../img/modal_background.png) no-repeat;
+    vertical-align: middle;
+
+    &-wrapper {
+        padding: 190px;
+    }
+}
+
+.hackathonplug-modal__close {
+    color: #1c1c1c;
+    font-weight: bold;
+    position: absolute;
+    top: 120px;
+    left: 840px;
 }
 
 .hackathonplug-modal__title {
-	font-size: 250%;
-	text-align: center;
-	padding: 20px 0;
+    font-size: 250%;
+    text-align: center;
+    padding: 20px 0;
 
 }
 
 .hackathonplug-modal__description {
-	text-align: left;
-	font-size: 140%;
-	margin-bottom: 10px;
+    text-align: left;
+    font-size: 110%;
+    margin-bottom: 10px;
+    color: #6e7376;
 }
-
 .hackathonplug-modal__authors {
-	display: inline-block;
-	margin-bottom: 20px;
-	font-style: italic;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-style: italic;
 }
 
 .hackathonplug-modal__authors-title {
-	font-size: 200%;
+    font-size: 200%;
 }
 
 .hackathonplug-modal__authors-list {
-	list-style: none;
+    list-style: none;
 }
 .hackathonplug-modal__authors-list-item {
-	text-align: left;
+    text-align: left;
+    color: #6e7376;
+    display: inline-block;
 }
 
 .hackathonplug-modal__date {
-	font-style: italic;
+    margin-bottom: 25px;
+
+    &-span1 {
+        display: block;
+        color: #b0b0b0;
+        font-size: 120%;
+    }
+
+    &-span2 {
+        display: block;
+        color: #1c1c1c;
+        font-size: 150%;
+        font-weight: bold;
+    }
 }
 
 .hackathonplug-modal__registration:after {
-	display: table;
-	content: ' ';
+    display: table;
+    content: ' ';
 }
 
-
 .hackathonplug-modal__registration-link {
-	display: inline-block;
-	text-decoration: none;
-	padding: 10px 20px;
-	background: #ffff00;
-	border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #1c1c1c;
+    color: #fff;
 }

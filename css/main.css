@@ -74,7 +74,7 @@ footer {
 .hakaton {
   position: fixed;
   display: block;
-  background: url('/img/blamba.png') 0 0 no-repeat;
+  background: url('/img/hakaton.png') 0 0 no-repeat;
   background-size: cover;
   width: 155px;
   height: 155px;
@@ -101,11 +101,13 @@ footer {
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 20px;
   font-weight: bold;
+  color: #000;
 }
 .hackathonplug-modal__overlay {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -113,7 +115,6 @@ footer {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   text-align: center;
-  display: none;
 }
 .hackathonplug-modal__overlay:after {
   display: inline-block;
@@ -123,19 +124,28 @@ footer {
   content: '';
 }
 .hackathonplug-modal__overlay.visible {
-  display: block;
+  display: inline-block;
 }
 .hackathonplug-modal {
   font-family: 'PT Serif';
   display: inline-block;
   position: relative;
-  max-width: 50%;
+  width: 1084px;
+  height: 792px;
   padding: 20px;
-  border: 5px solid #fff;
-  border-radius: 15px;
-  box-shadow: inset 0 2px 2px 2px rgba(0, 0, 0, 0.4);
-  background: #fff;
+  margin-top: -60px;
+  background: url(../img/modal_background.png) no-repeat;
   vertical-align: middle;
+}
+.hackathonplug-modal-wrapper {
+  padding: 190px;
+}
+.hackathonplug-modal__close {
+  color: #1c1c1c;
+  font-weight: bold;
+  position: absolute;
+  top: 120px;
+  left: 840px;
 }
 .hackathonplug-modal__title {
   font-size: 250%;
@@ -144,8 +154,9 @@ footer {
 }
 .hackathonplug-modal__description {
   text-align: left;
-  font-size: 140%;
+  font-size: 110%;
   margin-bottom: 10px;
+  color: #6e7376;
 }
 .hackathonplug-modal__authors {
   display: inline-block;
@@ -160,9 +171,22 @@ footer {
 }
 .hackathonplug-modal__authors-list-item {
   text-align: left;
+  color: #6e7376;
+  display: inline-block;
 }
 .hackathonplug-modal__date {
-  font-style: italic;
+  margin-bottom: 25px;
+}
+.hackathonplug-modal__date-span1 {
+  display: block;
+  color: #b0b0b0;
+  font-size: 120%;
+}
+.hackathonplug-modal__date-span2 {
+  display: block;
+  color: #1c1c1c;
+  font-size: 150%;
+  font-weight: bold;
 }
 .hackathonplug-modal__registration:after {
   display: table;
@@ -172,6 +196,6 @@ footer {
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
-  background: #ffff00;
-  border-radius: 10px;
+  background: #1c1c1c;
+  color: #fff;
 }
